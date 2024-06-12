@@ -1,0 +1,42 @@
+:root {
+	--site-width: min(80ch, 100vw - 2rem);
+	--font: "Alegreya", serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+	font-family: var(--font);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+p {
+	font-size: 1.4em;
+}
+
+header {
+	padding: 1rem;
+}
+
+main {
+	width: var(--site-width);
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	max-width: 100%;
+}
