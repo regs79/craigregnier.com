@@ -6,10 +6,10 @@
   <meta name="generator" content="{{ eleventy.generator }}">
   <meta name="description" content="{{ description | default("A site by Craig Regnier") }}">
   <title>{{ title | default("Craig Regnier") }} — craigregnier.com</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  {% set css %} {% include "style.css" %} {% endset %}
+  {% set css %} 
+    {% include "fonts.css" %}
+    {% include "style.css" %} 
+  {% endset %}
   <style>
     {{ css | cssmin | safe }}
   </style>
