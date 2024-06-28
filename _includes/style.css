@@ -2,6 +2,8 @@
 	--site-width: min(80ch, 100vw - 2rem);
 	--heading-font: "Alfa Slab One", serif;
 	--body-font: "Chivo", sans-serif;
+	--background-main: #fff;
+	--background-inverse: #222;
 }
 
 *, *::before, *::after {
@@ -21,6 +23,18 @@ body {
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
 }
 
 h1 {
@@ -48,4 +62,20 @@ main {
 footer {
 	padding: 1rem;
 	text-align: center;
+}
+
+.social {
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+}
+
+.social svg {
+	width: 2rem;
+	height: 2rem;
+	transition: color 200ms;
+}
+
+.mastodon:hover svg {
+	color: #6364ff;
 }
